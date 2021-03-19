@@ -1,0 +1,143 @@
+﻿body {
+    font-family: arial, sans-serif;
+    margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333333;
+}
+
+ul.topnav li {
+    float: left;
+}
+
+ul.topnav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}
+
+ul.topnav li img {
+    margin-top: 2px;
+    margin-bottom: -2px;
+}
+
+
+ul.topnav li a.link {
+    padding: 16px 16px;
+}
+
+
+ul.topnav li a:hover:not(.active) {
+    background-color: #111;
+}
+
+ul.topnav li a.active {
+    background-color: #4C50AF;
+}
+
+ul.topnav li a.active:hover {
+    background-color: #4C50CC;
+}
+
+ul.topnav li.right {
+    float: right;
+}
+
+@media screen and (max-width: 800px) {
+    ul.topnav {
+        height: auto;
+    }
+    
+    ul.topnav li.right,
+    ul.topnav li {
+        float: none;
+	}
+    
+    .fname,
+    .lname,
+    .province,
+    .postal {
+        width: 100% !important;
+        float: none !important;
+	}
+}
+
+#container {
+    padding: 16px;
+    background-color: white;
+}
+
+#reg-box {
+    width: 40%;
+    margin: auto;
+}
+
+.top-header {
+    text-align: center;
+}
+
+hr {
+    border: 1px solid #E5E5E5;
+    margin-bottom: 25px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+
+input[type=number] {
+    -moz-appearance: textfield;
+    
+}
+
+input[type=text], input[type=tel], select {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+}
+
+.fname, .province {
+    float: left;
+    width: 49%;
+}
+
+.lname, .postal {
+    float: right;
+    width: 49%;
+}
+
+.email {
+    clear: both;
+}
+
+.register {
+    background-color: #4C50AF;
+    color: white;
+    padding: 16px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+}
+
+.register:hover {
+    background-color: #4C50CC;
+}
