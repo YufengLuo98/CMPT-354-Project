@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="stylesheet" href="style.css">
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+
+<ul class="topnav">
+    <li><a href="#home"><img src="logo.png" alt="logo" style="width:46px;height:46px;"></a></li>
+    <li><a class="active link" href="#register">Register</a></li>
+    <li class="right"><a class="link" href="#about">About</a></li>
+</ul>
+
+<div id="container">
+    <div id="reg-box">
+    <h1 class="top-header">Register Customer</h1>
+    <hr>
+    <form action="./register" method="POST">
+        <div class="fname">
+            <label for="firstname"><b>First Name</b></label>
+            <input type="text" name="firstName" required>
+        </div>
+        
+        <div class="lname">
+            <label for="lastname"><b>Last Name</b></label>
+            <input type="text" name="lastname" required>
+        </div>
+        
+        <div class="email">
+            <label for="email"><b>Email</b></label>
+            <input type="text" name="email" required>
+        </div>
+        
+        <label for="phone"><b>Phone Number</b></label>
+        <input class="reg-input" type="tel" name="phone" maxlength="14" required>
+        
+        <label for="address"><b>Address</b></label>
+        <input type="text" name="address" required>
+        
+        <label for="city"><b>City</b></label>
+        <input type="text" name="city" required>
+        
+        <div class="province">
+            <label for="province"><b>Province</b></label>
+            <select name="province" required>
+                <option hidden disabled selected value> -- select an option -- </option>
+                <option value="Alberta">Alberta</option>
+                <option value="British Columbia">British Columbia</option>
+                <option value="Manitoba">Manitoba</option>
+                <option value="New Brunswick">New Brunswick</option>
+                <option value="Newfoundland and Labrador">Newfoundland and Labrador</option>
+                <option value="Northwest Territories">Northwest Territories</option>
+                <option value="Nova Scotia">Nova Scotia</option>
+                <option value="Nunavut">Nunavut</option>
+                <option value="Ontario">Ontario</option>
+                <option value="Prince Edward Island">Prince Edward Island</option>
+                <option value="Quebec">Quebec</option>
+                <option value="Saskatchewan">Saskatchewan</option>
+                <option value="Yukon">Yukon</option>
+                <option value="Manitoba">Manitoba</option>
+            </select>
+        </div>
+        
+        <div class="postal">
+            <label for="postal"><b>Postal Code</b></label>
+            <input type="text" name="postal" maxlength="6" required>
+        </div>
+
+        <br>
+        
+        <button class="register" type="submit">REGISTER</button>
+    </form>
+    </div>
+</div>
+<script type="text/javascript" src="reg.js"></script>
+</body>
+</html>
