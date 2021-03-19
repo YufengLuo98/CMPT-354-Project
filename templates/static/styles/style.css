@@ -67,9 +67,14 @@ ul.topnav li.right {
     .fname,
     .lname,
     .province,
-    .postal {
+    .postal,
+    .cardname,
+    .cardnumber,
+    .cardexpiry,
+    .cardcvv {
         width: 100% !important;
         float: none !important;
+        margin: 0 !important;
 	}
 }
 
@@ -104,7 +109,7 @@ input[type=number] {
     
 }
 
-input[type=text], input[type=tel], select {
+input[type=text], input[type=tel], input[type=number], select {
     width: 100%;
     padding: 15px;
     margin: 5px 0 22px 0;
@@ -126,6 +131,28 @@ input[type=text], input[type=tel], select {
 .email {
     clear: both;
 }
+
+.cardname {
+    float: left;
+    width: 54%;
+}
+
+.cardnumber {
+    float: right;
+    width: 44%;
+}
+
+.cardexpiry {
+    float: left;
+    width: 30%;
+}
+
+.cardcvv {
+    margin-left: 10px;
+    float: left;
+    width: 20%;
+}
+
 
 .register {
     background-color: #4C50AF;
